@@ -1,16 +1,29 @@
 {
-  "numCols": 5,
-  "numRows": 14,
-  "signatureDatas": [
+  "Items": [
     {
-      "id": "1",
+      "id": 1,
       "numFrames": 29,
-      "numLoopFrames": "6"
+      "numLoopFrames": 6
     },
     {
-      "id": "2",
-      "numFrames": 29,
-      "numLoopFrames": "2"
+      "id": 2,
+      "numFrames": 63,
+      "numLoopFrames": 6
+    },
+    {
+      "id": 3,
+      "numFrames": 55,
+      "numLoopFrames": 3
+    },
+    {
+      "id": 4,
+      "numFrames": 41,
+      "numLoopFrames": 4
+    },
+    {
+      "id": 5,
+      "numFrames": 61,
+      "numLoopFrames": 5
     }
   ]
 }

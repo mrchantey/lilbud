@@ -190,19 +190,20 @@ async function forEachInDir(args) {
 
 async function testImportSignatures() {
 	const args = {
-		pathIn: "./test/signatures",
-		pathOut: "./test/signatures_out",
-		numColsOut: 5,
-		numRowsOut: 14,
+		pathIn: "./test/Signatures_In",
+		pathOut: "./test/Signatures_Out",
+		numColsOut: 4,
+		numRowsOut: 16,
 		widthOut: 4096,
-		heightOut: 4096
+		heightOut: 4096,
+		normalize: true
 	}
 
 	const dirs = await fs.readdirSync(args.pathIn)
 	const sigDatas = dirs.map(d => {
-		const split = d.split("-")
-		const id = split[0]
-		const numLoopFrames = split[1]
+		const split = d.split("_")
+		const id = parseInt(split[0])
+		const numLoopFrames = parseInt(split[1])
 		return {
 			...args,
 			id,
@@ -222,19 +223,14 @@ async function testImportSignatures() {
 			numLoopFrames: sd.numLoopFrames,
 		}
 	}))
-
 	const jsonData = {
-		numCols: args.numColsOut,
-		numRows: args.numRowsOut,
-		signatureDatas: sigDatasSimple
+		Items: sigDatasSimple
 	}
 	fs.writeFileSync(`${args.pathOut}/data.json`, JSON.stringify(jsonData, null, 2))
-
-
 }
 
 if (require.main === module)
 	// testImportImageSequence()
-	// testImportSignatures()
-	testTileImages()
+	testImportSignatures()
+	// testTileImages()
 	// test()
