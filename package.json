@@ -10,10 +10,12 @@
 	"author": "",
 	"license": "ISC",
 	"bin": {
-		"lilbud": "./cli.js"
+		"lilbud": "cli.js"
 	},
 	"dependencies": {
+		"chalk": "^4.1.0",
 		"commander": "^6.1.0",
+		"cross-spawn": "^7.0.3",
 		"fs-extra": "^9.0.1",
 		"jimp": "^0.16.1",
 		"replaceall": "^0.1.6"
