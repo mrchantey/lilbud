@@ -1,0 +1,10 @@
+{
+	"someObject": {
+		"godAlmighty.png": {
+			"isFile": true,
+			"url": "https://material-ui.com/static/logo_raw.svg",
+			"isImage": true,
+			"hasMetadata": true
+		}
+	}
+}

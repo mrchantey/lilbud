@@ -71,6 +71,7 @@ function getFilesRecursive(parentDir, depth = -1, arr = []) {
 
 module.exports = {
 	createCommand,
+	getFilesRecursive,
 	execute
 }
 

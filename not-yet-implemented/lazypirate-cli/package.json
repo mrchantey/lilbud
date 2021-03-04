@@ -1,0 +1,38 @@
+{
+  "name": "lazypirate-cli",
+  "version": "0.1.31",
+  "description": "the essential npm tool for the lazy pirate",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "powershell ./publish.ps1",
+    "postinstall": "node ./src/utility/help.js",
+    "test-webpack": "node index.js create testDir webpack -d -f && cd testDir && npm start",
+    "test-aframe": "node index.js create testDir aframe -d -f && cd testDir && npm start",
+    "test-socket.io": "node index.js create testDir socket.io -d -f && cd testDir && npm start",
+    "test-johnny-five-interface": "node index.js create testDir johnny-five-interface -d -f && cd testDir && npm start",
+    "test-p5": "node index.js create testDir p5 -d -f && cd testDir && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piratesjustar/lazypirate-cli.git"
+  },
+  "keywords": [
+    "lazypirate",
+    "boilerplate",
+    "tools"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piratesjustar/lazypirate-cli/issues"
+  },
+  "homepage": "https://github.com/piratesjustar/lazypirate-cli#readme",
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^7.0.1"
+  },
+  "devDependencies": {},
+  "bin": {
+    "lazypirate": "./index.js"
+  }
+}

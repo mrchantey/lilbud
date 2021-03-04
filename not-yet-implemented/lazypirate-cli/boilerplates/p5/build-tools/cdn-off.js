@@ -1,0 +1,1 @@
+require('./toggle-cdn').toggleOff();

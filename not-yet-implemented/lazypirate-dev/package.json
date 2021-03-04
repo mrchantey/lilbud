@@ -1,0 +1,36 @@
+{
+  "name": "lazypirate-dev",
+  "version": "1.0.0",
+  "description": "development repo for creating the boilerplate and tools used by the cli.",
+  "main": "index.js",
+  "dependencies": {
+    "aframe": "^0.8.2",
+    "aframe-environment-component": "^1.1.0",
+    "aframe-extras": "^4.2.0",
+    "aframe-physics-system": "^3.2.0",
+    "lazypirate-cli": "^0.0.9",
+    "recursive-readdir": "^2.2.2",
+    "super-hands": "^3.0.0"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.2.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piratesjustar/lazypirate-dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piratesjustar/lazypirate-dev/issues"
+  },
+  "homepage": "https://github.com/piratesjustar/lazypirate-dev#readme"
+}
